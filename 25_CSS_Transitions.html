@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 3 Transitions</title>
+    <style>
+        div{
+            height:100px;
+            width: 100px;
+            background-color: red;
+
+
+
+        }
+        #t_width{
+            transition: width 2s;
+        }
+        #t_width:hover{
+            width: 200px;
+        }
+        #t_height{
+            transition: height 2s;
+        }
+        #t_height:hover{
+            height: 200px;
+        }
+
+        #t_width_height{
+            transition: width 2s, height 2s;
+        }
+        #t_width_height:hover{
+            width: 200px;
+            height: 200px;
+        }
+
+        #t_timing{
+            margin-bottom: 100px;
+            transition: width 2s;
+            transition-timing-function: linear;
+            transition-delay: 2s;
+        }
+        #t_timing:hover{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+<h2>width transtion</h2>
+<div id="t_width"></div>
+
+<h2>height transtion</h2>
+<div id="t_height"></div>
+
+<h2> width & height transtion</h2>
+<div id="t_width_height"></div>
+
+<h2> transtion timing</h2>
+<div id="t_timing"></div>
+
+</body>
+</html>
